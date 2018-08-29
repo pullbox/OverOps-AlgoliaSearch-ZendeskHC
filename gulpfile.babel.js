@@ -22,11 +22,11 @@ gulp.task('build:css:watch', ['build:css', 'build:css:watcher']);
 gulp.task('build:js', buildJS);
 gulp.task('build:js:watch', () => buildJS({watch: true}));
 
-gulp.task('build', ['build:js', 'build:css', 'build:docs']);
+gulp.task('build', ['build:js', 'build:css']);
 
 gulp.task('clean', () => del(['dist/', 'dist-es5-module/', 'coverage/', 'mochawesome/']));
 
-gulp.task('dev', ['build:js:watch', 'build:css:watch', 'build:docs:watch', 'server']);
+gulp.task('dev', ['build:js:watch', 'build:css:watch', 'server']);
 
 gulp.task('lint', lint);
 
