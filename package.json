@@ -1,20 +1,20 @@
 {
-  "name": "algoliasearch.zendesk-hc",
-  "version": "2.22.3",
-  "description": "Algolia Search for Zendesk's Help Center",
-  "author": "Algolia <support@algolia.com>",
+  "name": "OverOps-AlgoliaSearch-ZendeskHC",
+  "version": "1.0.3",
+  "description": "Customized Algolia Search for Zendesk's Help Center",
+  "author": "-",
   "keywords": [
     "algolia",
     "search",
     "zendesk",
     "help center"
   ],
-  "homepage": "https://github.com/algolia/algoliasearch-zendesk",
-  "bugs": "https://github.com/algolia/algoliasearch-zendesk/issues",
+  "homepage": "https://github.com/pullb0x/OverOps-AlgoliaSearch-ZendeskHC",
+  "bugs": "https://github.com/pullb0x/OverOps-AlgoliaSearch-ZendeskHC/issues",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/algolia/algoliasearch-zendesk.git"
+    "url": "https://github.com/pullb0x/OverOps-AlgoliaSearch-ZendeskHC.git"
   },
   "files": [
     "dist/",
