@@ -15,9 +15,9 @@ gulp.task('build:css', buildCSS);
 gulp.task('build:css:watcher', () => gulp.watch('css/**/*.scss', ['build:css']));
 gulp.task('build:css:watch', ['build:css', 'build:css:watcher']);
 
-gulp.task('build:docs', buildDocs);
-gulp.task('build:docs:watcher', () => gulp.watch('README.md', ['build:docs']));
-gulp.task('build:docs:watch', ['build:docs', 'build:docs:watcher']);
+//gulp.task('build:docs', buildDocs);
+//gulp.task('build:docs:watcher', () => gulp.watch('README.md', ['build:docs']));
+//gulp.task('build:docs:watch', ['build:docs', 'build:docs:watcher']);
 
 gulp.task('build:js', buildJS);
 gulp.task('build:js:watch', () => buildJS({watch: true}));
