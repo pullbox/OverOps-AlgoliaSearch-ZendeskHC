@@ -198,7 +198,7 @@ const defaultTemplates = {
     <time data-datetime="relative" datetime="[[ created_at_iso ]]"></time>
   </div>
   <div class="search-result-link-wrapper">
-    <a class="search-result-link" href="[[ baseUrl ]][[ locale.locale ]]/articles/[[ id ]]">
+    <a class="search-result-link" href="[[ url ]]">
       [[& _highlightResult.title.value ]]
     </a>
     [[# vote_sum ]]<span class="search-result-votes">[[ vote_sum ]]</span>[[/ vote_sum ]]
@@ -208,6 +208,9 @@ const defaultTemplates = {
   </div>
 </div>`
   ),
+
+
+ //   <a class="search-result-link" href="[[ baseUrl ]][[ locale.locale ]]/articles/[[ id ]]">
 
     noResult: ({query, translations}) => (
 `<div id="no-results-message">
