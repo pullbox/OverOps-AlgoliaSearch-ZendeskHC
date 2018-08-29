@@ -28,6 +28,7 @@
   "dependencies": {
     "algoliasearch": "^3.18.1",
     "autocomplete.js": "^0.28.1",
+    "changelog": "^1.4.2",
     "hogan.js": "^3.0.2",
     "instantsearch.js": "^1.0.0",
     "json": "^9.0.6",
