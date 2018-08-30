@@ -183,7 +183,10 @@ class Autocomplete {
 
   _onSelected(baseUrl, locale) {
     return (event, suggestion, dataset) => {
-      location.href = `${baseUrl}${locale}/${dataset}/${suggestion.id}`;
+      location.href = `${suggestion.url}`;
+
+      // inject document URL Daniel
+      // location.href = `${baseUrl}${locale}/${dataset}/${suggestion.id}`;
     };
   }
 
