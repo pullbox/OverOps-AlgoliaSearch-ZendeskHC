@@ -53,7 +53,6 @@ const TRANSLATIONS = {
     'zh-cn': '类别',
     'zh-tw': '類別'
   },
-  const TRANSLATIONS = {
   sections: {
     ar: 'Sectionen',
     bg: 'Sectionen',
