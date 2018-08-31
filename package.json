@@ -1,6 +1,6 @@
 {
   "name": "overops.algoliasearch-zendeskhc",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "description": "Customized Algolia Search for Zendesk's Help Center",
   "author": "daniel.bechtel@overops.com",
   "keywords": [
