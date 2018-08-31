@@ -193,7 +193,7 @@ const defaultTemplates = {
 
     // Instant search result template
     hit: compile(
-`<div class="search-result">
+/*`<div class="search-result">
   <div class="search-result-meta">
     <time data-datetime="relative" datetime="[[ created_at_iso ]]"></time>
   </div>
@@ -206,7 +206,51 @@ const defaultTemplates = {
   <div class="search-result-body">
     [[& _snippetResult.body_safe.value ]]
   </div>
-</div>`
+</div>`*/
+
+`<div class="search-result">
+  <div
+  class="
+    aa-article-hit
+    [[# isCategoryHeader ]]aa-article-hit__category-first[[/ isCategoryHeader ]]
+    [[# isSectionHeader ]]aa-article-hit__section-first[[/ isSectionHeader ]]
+    [[# sizeModifier ]]aa-article-hit__[[ sizeModifier ]][[/ sizeModifier]]
+  "
+>
+  <div class="aa-article-hit--category">
+    <span class="aa-article-hit--category--content">
+      [[ category.title ]]
+    </span>
+  </div>
+  <div class="aa-article-hit--line">
+    <div class="aa-article-hit--section">
+      [[ section.title ]]
+    </div>
+    <div class="aa-article-hit--content">
+      <div class="aa-article-hit--headline">
+      <a href="[[ url ]]">
+        <span class="aa-article-hit--title">
+          [[& _highlightResult.title.value ]]
+        </span>
+      </a>
+      [[# vote_sum ]]<span class="search-result-votes">[[ vote_sum ]]</span>[[/ vote_sum ]]
+      </div>
+      [[# _snippetResult.body_safe.value ]]
+        <div class="aa-article-hit--body">[[& _snippetResult.body_safe.value ]]</div>
+      [[/ _snippetResult.body_safe.value ]]
+    </div>
+  </div>
+</div>
+<div class="clearfix"></div>`
+
+
+
+
+
+
+
+
+
   ),
 
 
