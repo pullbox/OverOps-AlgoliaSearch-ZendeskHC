@@ -196,7 +196,7 @@ const defaultTemplates = {
     hit: compile(
 `<div class="search-result">
   <div class="search-result-meta">
-   <time data-datetime="relative" datetime="[[ created_at_iso ]]"></time>
+
   </div>
   <div class="search-result-link-wrapper">
     <a class="search-result-link" href="[[ url ]]">
