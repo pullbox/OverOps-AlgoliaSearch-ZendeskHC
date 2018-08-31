@@ -177,6 +177,21 @@ class InstantSearch {
       })
     );
 
+
+     this.instantsearch.addWidget(
+      instantsearch.widgets.hierarchicalMenu({
+        container: '#algolia-sections',
+        attributes: ['section.title', 'section.full_path'],
+        separator: ' > ',
+        templates: {
+          header: translations.sections,
+          item: templates.instantsearch.hierarchicalItem
+        }
+      })
+    );
+
+
+
     this.instantsearch.addWidget(
       instantsearch.widgets.refinementList({
         container: '#algolia-labels',
