@@ -19,7 +19,8 @@ class InstantSearch {
             paginationSelector,
             selector
         },
-        subdomain
+        subdomain,
+        index
     }) {
         if (!enabled) return;
 

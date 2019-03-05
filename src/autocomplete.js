@@ -30,7 +30,8 @@ class Autocomplete {
             inputSelector
         },
         indexPrefix,
-        subdomain
+        subdomain,
+        index
     }) {
         if (!enabled) return;
 
@@ -56,6 +57,7 @@ class Autocomplete {
         highlightColor,
         poweredBy,
         subdomain,
+        index,
         templates,
         translations
     }) {
