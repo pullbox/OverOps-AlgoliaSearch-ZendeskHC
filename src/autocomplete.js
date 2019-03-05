@@ -39,9 +39,10 @@ class Autocomplete {
 
         this.client = algoliasearch(applicationId, apiKey);
         this.client.addAlgoliaAgent('Zendesk Integration (__VERSION__)');
+        this.index = this.client.initIndex(`${index}`);
         //this.index = this.client.initIndex(`${indexPrefix}${subdomain}_articles`);
-        //this.index = this.client.initIndex(`Documentation`);
-        this.index = this.client.initIndix(`${index}`);
+        //this.index = this.client.initIndex(`Internal_Documentation`);
+        //this.index = this.client.initIndix(`${index}_Documentation`);
     }
 
     render({
